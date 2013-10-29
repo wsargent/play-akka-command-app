@@ -1,0 +1,7 @@
+@(registerForm: Form[Application.Register])
+
+@helper.form(action = routes.Application.register) {
+    @helper.inputText(registerForm("username"))
+    @helper.inputText(registerForm("email"))
+    <input type="submit" value="Submit">
+}
